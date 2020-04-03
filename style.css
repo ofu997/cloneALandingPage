@@ -8,7 +8,7 @@ body {
   font-family: 'Segoe UI', Tahoma;
   background: #fff5ee;
   /* ivory #fffff0; */
-  color: #000;
+  color: #000; 
   font-size: 15px;
   line-height: 1.5; ;
 }
@@ -31,6 +31,7 @@ ul {
 .mainNav {
   display: flex;   
   align-items: center;
+  justify-content: space-between;
   height: 60px;
   padding: 20px 0;
   font-size: 13px;
@@ -41,18 +42,40 @@ ul {
 }
 
 .mainNav ul {
+  /* sets list items into horizontal row */
   display: flex; 
 }
 
 .mainNav ul li {
+  /* adds space between menu items */
   padding: 0 10px;  
+} 
+
+.mainNav ul li a {
+  padding-bottom: 2px; 
 }
 
 .mainNav ul li a:hover {
-  border-bottom: ; 
+  border-bottom: 2px solid #7851a9;
 }
 
 .mainNav ul.mainMenu {
   flex: 1; 
   margin-left: 20px; 
+} 
+
+.btn {
+  cursor: pointer; 
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #262626;
+  color: #fff;
+  font-size: 15px; 
+}
+
+.btn:hover {
+  /* slightly transparent */
+  opacity: 0.9; 
 }
