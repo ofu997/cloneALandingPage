@@ -10,10 +10,10 @@
 <body>
   <!-- start container -->
   <div class='container'>
-    <nav class='mainNav'>
+    <nav class='main-nav'>
       <img src='img/logo.png' alt=Microsoft' class='logo'>
 
-      <ul class='mainMenu'>
+      <ul class='main-menu'>
         <li><a href='#'>Office</a></li>
         <li><a href='#'>Windows</a></li>
         <li><a href='#'>Surface</a></li>
@@ -22,7 +22,7 @@
         <li><a href='#'>Support</a></li>
       </ul>
 
-      <ul class='rightMenu'>
+      <ul class='right-menu'>
         <li>
           <a href='#'>
             <i class='fas fa-search'></i>
@@ -237,6 +237,10 @@
         </ul>
       </div>
     </footer>    
-
+    <script>
+      document.querySelector('.menu-btn').addEventListener(
+        'click',() => document.querySelector('.main-menu').classList.toggle('show')
+      );
+    </script>
 </body>
 </html>
